@@ -1,4 +1,4 @@
-\begin{thebibliography}{186}
+\begin{thebibliography}{187}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \providecommand{\urlprefix}{}
@@ -73,29 +73,23 @@ Boyd, Robert \& Peter~J. Richerson. 2005.
 \newblock \emph{The origin and evolution of cultures}.
 \newblock New York: Oxford University Press.
 
-\bibitem[{{Bronislaw Malinowski}(1922)}]{bronislaw_malinowski_argonauts_1922}
-{Bronislaw Malinowski}. 1922.
-\newblock \emph{Argonauts of the western pacific: An account of native
-  enterprise and adventure in the archipelagoes of melanesian new guinea}.
-\newblock London: Routledge.
-
 \bibitem[{Brown \& Gaskins(2014)}]{brown_language_2014}
 Brown, Penelope \& Suzanne Gaskins. 2014.
 \newblock Language acquisition and language socialization.
 \newblock In N.~J. Enfield, Paul Kockelman \& Jack Sidnell (eds.), \emph{The
-  cambridge handbook of linguistic anthropology}, 187--226. Cambridge:
+  {C}ambridge handbook of linguistic anthropology}, 187--226. Cambridge:
   Cambridge University Press.
 
 \bibitem[{Bybee(2010)}]{bybee_language_2010}
 Bybee, Joan. 2010.
 \newblock \emph{Language, usage and cognition}.
-\newblock Cambridge: Cambridge University Press 1st edn.
+\newblock Cambridge: Cambridge University Press.
 
 \bibitem[{Chafe(2000)}]{chafe_loci_2000}
 Chafe, Wallace. 2000.
 \newblock Loci of diversity and convergence in thought and language.
 \newblock In Martin P{\"u}tz \& Marjolijn Verspoor (eds.), \emph{Explorations
-  in linguistic relativity.}, 101--123. Amsterdam: Benjamins.
+  in linguistic relativity}, 101--123. Amsterdam: Benjamins.
 
 \bibitem[{Chater \& Christiansen(2010)}]{chater_language_2010}
 Chater, Nick \& Morten~H. Christiansen. 2010.
@@ -142,7 +136,7 @@ Croft, William. 2000.
 
 \bibitem[{Curnow(2001)}]{curnow_what_2001}
 Curnow, Timothy~Jowan. 2001.
-\newblock What language features can be 'borrowed'?
+\newblock What language features can be `borrowed'?
 \newblock In Alexandra~Y. Aikhenvald \& R.~M.~W. Dixon (eds.), \emph{Areal
   diffusion and genetic inheritance: problems in comparative linguistics},
   412--436. Oxford: Oxford University Press.
@@ -151,7 +145,7 @@ Curnow, Timothy~Jowan. 2001.
 Cutler, Anne. 2012.
 \newblock \emph{Native listening: Language experience and the recognition of
   spoken words}.
-\newblock {MIT} Press.
+\newblock Cambridge, {MA}: {MIT} Press.
 
 \bibitem[{Darwin(1859)}]{darwin_origin_1859}
 Darwin, Charles. 1859.
@@ -185,15 +179,20 @@ Dawkins, Richard. 1982.
 
 \bibitem[{Dawkins(1999)}]{DawkinsMemeForeword1999}
 Dawkins, Richard. 1999.
-\newblock \emph{Foreword} vii--xvii.
-\newblock Oxford University Press.
+\newblock Foreword to \textit{The meme machine} by {S}usan {B}lakemore.
+\newblock In \emph{The meme machine}, vii--xvii. Oxford University Press.
 
 \bibitem[{Dingemanse et~al.(2013)Dingemanse, Torreira \&
   Enfield}]{dingemanse_is_2013}
 Dingemanse, Mark, Francisco Torreira \& N.~J. Enfield. 2013.
 \newblock Is ``huh?'' a universal word? {C}onversational infrastructure and the
   convergent evolution of linguistic items.
-\newblock \emph{{PLoS} One} .
+\newblock \emph{{PLOS} {O}ne} 8(11). e78273.
+
+\bibitem[{Dixon(1997)}]{dixon_rise_1997}
+Dixon, R. M.~W. 1997.
+\newblock \emph{The rise and fall of languages}.
+\newblock Cambridge: Cambridge University Press.
 
 \bibitem[{Dixon(2010)}]{dixon_basic_2010}
 Dixon, R. M.~W. 2010.
@@ -256,7 +255,7 @@ Enfield, N.~J. 2002.
 \bibitem[{Enfield(2003)}]{enfield_linguistic_2003}
 Enfield, N.~J. 2003.
 \newblock \emph{Linguistic epidemiology: Semantics and grammar of language
-  contact in mainland southeast asia}.
+  contact in mainland {S}outheast {A}sia}.
 \newblock London: Routledge Curzon.
 
 \bibitem[{Enfield(2005)}]{enfield_areal_2005}
@@ -298,7 +297,8 @@ Enfield, N.~J. 2015.
 
 \bibitem[{Enfield \& Levinson(2006)}]{enfield_roots_2006}
 Enfield, N.~J. \& Stephen~C. Levinson. 2006.
-\newblock \emph{Roots of human sociality: culture, cognition, and interaction}.
+\newblock \emph{Roots of human sociality: {C}ulture, cognition, and
+  interaction}.
 \newblock London: Berg.
 
 \bibitem[{Enfield \& Sidnell(2014)}]{enfield_language_2014}
@@ -312,18 +312,18 @@ Enfield, N.~J. \& Jack Sidnell. 2014.
 \bibitem[{Evans(2012)}]{evans_enigma_2012}
 Evans, Nicholas~D. 2012.
 \newblock An enigma under an enigma: Unsolved linguistic paradoxes in a
-  sometime continent of hunter-gatherers (conference presentation, amsterdam
+  sometime continent of hunter-gatherers (conference presentation, {A}msterdam
   2012).
 
 \bibitem[{Evans-Pritchard(1940)}]{evans-pritchard_nuer:_1940}
 Evans-Pritchard, E.~E. 1940.
-\newblock \emph{The nuer: A description of the modes of livelihood and
-  political institutions of a nilotic people}.
+\newblock \emph{The {N}uer: A description of the modes of livelihood and
+  political institutions of a {N}ilotic people}.
 \newblock Clarendon Press.
 
 \bibitem[{Everett(2005)}]{everett_cultural_2005}
 Everett, Daniel~L. 2005.
-\newblock Cultural constraints on grammar and cognition in pirah{\~a}.
+\newblock Cultural constraints on grammar and cognition in {P}irah{\~a}.
 \newblock \emph{Current Anthropology} 46(4). 621--646.
 
 \bibitem[{Everett(2012)}]{everett_language:_2012}
@@ -365,8 +365,8 @@ Fortes, Meyer \& E.~E. Evans-Pritchard (eds.). 1940.
 
 \bibitem[{Gabelentz(1891)}]{gabelentz_sprachwissenschaft_1891}
 Gabelentz, Georg von~der. 1891.
-\newblock \emph{Die sprachwissenschaft, ihre aufgaben, methoden und bisherigen
-  ergebnisse}.
+\newblock \emph{Die {S}prachwissenschaft, ihre {A}ufgaben, {M}ethoden und
+  bisherigen {E}rgebnisse}.
 \newblock London: Routledge/Thoemmes Press. 2nd edn.
 
 \bibitem[{Garfinkel(1952)}]{garfinkel_perception_1952}
@@ -404,7 +404,7 @@ Giv{\'o}n, Talmy. 1984.
 
 \bibitem[{Gladwell(2000)}]{gladwell_tipping_2000}
 Gladwell, Malcolm. 2000.
-\newblock \emph{The tipping point: how little things can make a big
+\newblock \emph{The tipping point: How little things can make a big
   difference}.
 \newblock Boston: Little and Brown.
 
@@ -671,6 +671,13 @@ MacWhinney, B. 2005.
 \newblock The emergence of linguistic form in time.
 \newblock \emph{Connection Science} 17(3-4). 191--211.
 
+\bibitem[{Malinowski(1922)}]{bronislaw_malinowski_argonauts_1922}
+Malinowski, Bronislaw. 1922.
+\newblock \emph{Argonauts of the {W}estern {P}acific: An account of native
+  enterprise and adventure in the archipelagoes of {M}elanesian {N}ew
+  {G}uinea}.
+\newblock London: Routledge.
+
 \bibitem[{Manning(2005)}]{manning_migration_2005}
 Manning, Patrick. 2005.
 \newblock \emph{Migration in world history}.
@@ -764,7 +771,7 @@ Norman, Donald~A. 1991.
 \bibitem[{Pagel et~al.(2007)Pagel, Atkinson \& Meade}]{pagel_frequency_2007}
 Pagel, Mark, Quentin~D. Atkinson \& Andrew Meade. 2007.
 \newblock Frequency of word-use predicts rates of lexical evolution throughout
-  indo-european history.
+  {I}ndo-{E}uropean history.
 \newblock \emph{Nature} 449. 717--720.
 
 \bibitem[{Parry \& Bloch(1989)}]{parry_money_1989}
@@ -791,7 +798,8 @@ Radcliffe-Brown, A.~R. 1931.
 \bibitem[{Reesink et~al.(2009)Reesink, Singer \&
   Dunn}]{reesink_explaining_2009}
 Reesink, Ger, Ruth Singer \& Michael Dunn. 2009.
-\newblock Explaining the linguistic diversity of sahul using population models.
+\newblock Explaining the linguistic diversity of {S}ahul using population
+  models.
 \newblock \emph{{PLoS} Biology} 7(11). 1--9.
 
 \bibitem[{Ridley(1997)}]{ridley_evolution_1997}
@@ -900,7 +908,7 @@ Simon, Herbert~A. 1990.
 
 \bibitem[{Slobin(1996)}]{slobin_thought_1996}
 Slobin, Dan. 1996.
-\newblock From "thought and language" to "thinking to speaking".
+\newblock From `thought and language' to `thinking for speaking'.
 \newblock In J.~J. Gumperz \& Stephen~C. Levinson (eds.), \emph{Rethinking
   linguistic relativity}, 70--96. Cambridge University Press.
 

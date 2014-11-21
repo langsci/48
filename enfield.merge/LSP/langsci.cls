@@ -1,11 +1,12 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{LSP/langsci}[2014/08/19 Language Science Press]
+\ProvidesClass{LSP/langsci}[2014/11/15 Language Science Press]
 
 % Default values:
 \usepackage{xspace}
 \newcommand{\lsp}{Language Science Press\xspace}
 \newcommand{\lsSeriesNumber}{??}
-\newcommand{\lsISBN}{????????}
+\newcommand{\lsISSN}{??}
+\newcommand{\lsISBN}{000-0-000000-00-0}
 \newcommand{\lsURL}{http://langsci-press.org/catalog}
 \newcommand{\lsSeries}{eotms}
 \newcommand{\lsSpineBreadth}{20mm}
@@ -19,7 +20,7 @@
 \newif\iflsCollection \lsCollectionfalse
 \newif\iflsCollectionChapter \lsCollectionChapterfalse
 \newif\iflsCollectionTOCLong \lsCollectionTOCLongfalse
-
+\newif\iflsNewtxmath \lsNewtxmathfalse
 
 
 % Option handling:
@@ -30,7 +31,10 @@
 \DeclareStringOption{number}[??]
 	\define@key{langsci}{number}{%
 		\renewcommand{\lsSeriesNumber}{#1}}
-\DeclareStringOption{isbn}[????????]
+\DeclareStringOption{issn}[??]
+	\define@key{langsci}{issn}{%
+		\renewcommand{\lsISSN}{#1}}
+\DeclareStringOption{isbn}[000-0-000000-00-0]
 	\define@key{langsci}{isbn}{%
 		\renewcommand{\lsISBN}{#1}}
 \DeclareStringOption{url}[http://langsci-press.org/catalog]
@@ -61,6 +65,8 @@
 	\lsIndexfalse }
 \DeclareVoidOption{biblatex}{  			
 	\lsBiblatextrue}
+\DeclareVoidOption{newtxmath}{  			
+	\lsNewtxmathtrue}
 \DeclareVoidOption{collection}{  			
 	\lsCollectiontrue}
 \DeclareVoidOption{collectionchapter}{  			
@@ -116,65 +122,58 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\usepackage{xstring} 	% for manipulating strings
 \usepackage{ifxetex}
-\ifxetex
+\ifxetex\else\ClassError{LSP/langsci}{Please use XeLaTeX!}{}\fi
 	
-	\usepackage{amssymb} % has to be loaded before other stuff			
-	\usepackage{fontspec}
-	\newcommand{\fontpath}{./LSP/lsp-fonts/}
+\usepackage{amssymb} % has to be loaded before other stuff
+\usepackage{dtklogos}\newcommand{\xelatex}{\XeLaTeX\xspace}	% the XeLaTeX symbol			
+\usepackage{fontspec}
+\newcommand{\fontpath}{./LSP/lsp-fonts/}
 
-	\setsansfont[
-		%Ligatures={TeX,Common},		% not supported by ttf
-		Scale=MatchLowercase,
-		Path=\fontpath,
-		BoldFont = Arimo-Bold_B.ttf ,
-		ItalicFont = Arimo-Italic_B.ttf ,				
-		BoldItalicFont = Arimo-BoldItalic_B.ttf 		
-		]{Arimo_B.ttf}
-			
-	\setmonofont[
-		Ligatures={TeX},Scale=MatchLowercase,Path=\fontpath,
-		BoldFont = FreeMonoBold_B.otf ,
-		SlantedFont = FreeMonoOblique_B.otf ,				
-		BoldSlantedFont = FreeMonoBoldOblique_B.otf 		
-		]{FreeMono_B.otf}
+\setsansfont[
+	%Ligatures={TeX,Common},		% not supported by ttf
+	Scale=MatchLowercase,
+	Path=\fontpath,
+	BoldFont = Arimo-Bold_B.ttf ,
+	ItalicFont = Arimo-Italic_B.ttf ,				
+	BoldItalicFont = Arimo-BoldItalic_B.ttf 		
+	]{Arimo_B.ttf}
+		
+\setmonofont[
+	Ligatures={TeX},Scale=MatchLowercase,Path=\fontpath,
+	BoldFont = FreeMonoBold_B.otf ,
+	SlantedFont = FreeMonoOblique_B.otf ,				
+	BoldSlantedFont = FreeMonoBoldOblique_B.otf 		
+	]{FreeMono_B.otf}
 
 
-	\setmainfont[
-		Ligatures={TeX,Common},
-		Path=\fontpath,
-		PunctuationSpace=0,							
-		%Numbers={OldStyle,Proportional},				% for tables use \addfontfeatures{Numbers={Monospaced,Lining}}
-		Numbers={Proportional},	% normal numbers			% for tables use \addfontfeatures{Numbers={Monospaced,Lining}}
-		BoldFont = LinLibertine_RZ_B.otf ,				% semi-bold
-		ItalicFont = LinLibertine_RI_B.otf ,			
-		BoldItalicFont = LinLibertine_RZI_B.otf 		% semi-bold
-		]{LinLibertine_R_B.otf}			
-  
-  \usepackage[libertine]{newtxmath}
-  
-  \let\oldtabular\tabular	% number in tabulars
-  \let\endoldtabular\endtabular
-  \renewenvironment{tabular}{\normalfont\addfontfeatures{Numbers=Lining}\selectfont\oldtabular}{\endoldtabular}
+\setmainfont[
+	Ligatures={TeX,Common},
+	Path=\fontpath,
+	PunctuationSpace=0,							
+	%Numbers={OldStyle,Proportional},				% for tables use \addfontfeatures{Numbers={Monospaced,Lining}}
+	Numbers={Proportional},	% normal numbers			% for tables use \addfontfeatures{Numbers={Monospaced,Lining}}
+	BoldFont = LinLibertine_RZ_B.otf ,				% semi-bold
+	ItalicFont = LinLibertine_RI_B.otf ,			
+	BoldItalicFont = LinLibertine_RZI_B.otf 		% semi-bold
+	]{LinLibertine_R_B.otf}			
+
+\iflsNewtxmath							% some users have problems when installing newtxmath
+	\usepackage[libertine]{newtxmath}
+\fi 	
+
+\let\oldtabular\tabular	% number in tabulars
+\let\endoldtabular\endtabular
+\renewenvironment{tabular}{\normalfont\addfontfeatures{Numbers=Lining}\selectfont\oldtabular}{\endoldtabular}
  
   %\usepackage{polyglossia}		% TODO remove this?
   %\setdefaultlanguage{british}
-\else
-  \usepackage[T1]{fontenc}
-  \usepackage{ucs}  				% extended UTF8 support TODO remove this?
-  \usepackage[utf8x]{inputenc}
-  \usepackage{libertine}			% TODO 
-  
-  %\usepackage[british]{babel}   	% TODO remove this?
-\fi
 
 %\frenchspacing			
 \usepackage[final]{microtype}
 \usepackage{graphicx}
 
-
-
-\ifxetex
   \newcommand{\lsCoverTitleFont}[1]{\sffamily\addfontfeatures{Scale=MatchUppercase}\fontsize{52pt}{16.75mm}\selectfont #1}
   \newcommand{\lsCoverSubTitleFont}{\sffamily\addfontfeatures{Scale=MatchUppercase}\fontsize{25pt}{10mm}\selectfont}
   \newcommand{\lsCoverAuthorFont}{\fontsize{25pt}{12.5mm}\selectfont}
@@ -184,30 +183,10 @@
   \newcommand{\lsDedicationFont}{\fontsize{15pt}{10mm}\selectfont}
   \newcommand{\lsBackTitleFont}{\sffamily\addfontfeatures{Scale=MatchUppercase}\fontsize{25pt}{10mm}\selectfont}
   \newcommand{\lsBackBodyFont}{\lsInsideFont}
-  \newcommand{\lsSpineAuthorFont}{\fontsize{12pt}{14pt}\selectfont}
-  \newcommand{\lsSpineTitleFont}{\sffamily\fontsize{16pt}{14pt}\selectfont}
-\else 	% PDFLaTeX:
-  \newcommand{\lsCoverTitleFont}[1]{\sffamily\fontfamily{fxlj}\fontsize{52pt}{16.75mm}\selectfont #1}
-  \newcommand{\lsCoverSubTitleFont}{\sffamily\fontfamily{fxlj}\fontsize{25pt}{10mm}\selectfont}
-  \newcommand{\lsCoverAuthorFont}{\fontencoding{T1}\fontfamily{fxlj}\fontsize{25pt}{12.5mm}\selectfont}
-  \newcommand{\lsCoverSeriesFont}{\fontencoding{T1}\fontfamily{phv}\fontseries{sc}\fontsize{14pt}{7.5mm}\selectfont}
-  \newcommand{\lsCoverSeriesHistoryFont}{\fontencoding{T1}\fontfamily{phv}\fontseries{b}\fontsize{10pt}{5mm}\selectfont}
-  \newcommand{\lsInsideFont}{\fontencoding{T1}\fontfamily{fxlj}\selectfont}
-  \newcommand{\lsDedicationFont}{\fontsize{15pt}{10mm}\selectfont}
-  \newcommand{\lsBackTitleFont}{\lsCoverAuthorFont}
-  \newcommand{\lsBackBodyFont}{\lsInsideFont}
-  \newcommand{\lsSpineAuthorFont}{\fontsize{12pt}{14pt}\selectfont}
-  \newcommand{\lsSpineTitleFont}{\sffamily\fontsize{16pt}{14pt}\selectfont}
-  
-  \renewcommand{\bfseries}{\textsb}  	% bold -> semibold
-\fi
+  \newcommand{\lsSpineAuthorFont}{\fontsize{16pt}{14pt}\selectfont}
+  \newcommand{\lsSpineTitleFont}{\sffamily\fontsize{18pt}{14pt}\selectfont}
 
 \setkomafont{sectioning}{\normalcolor\bfseries}
-
-% qtm = tgtermes
-% ptm = times
-% phv = helvet
-% fxlj = libertine
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -215,7 +194,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage[table]{xcolor}
+\usepackage{xcolor}
 \definecolor{lsLightBlue}{cmyk}{0.6,0.05,0.05,0}
 \definecolor{lsMidBlue}{cmyk}{0.75,0.15,0,0}
 \definecolor{lsMidDarkBlue}{cmyk}{0.9,0.4,0.05,0}
@@ -237,6 +216,8 @@
 \definecolor{lsDarkGreen2}{cmyk}{0.85,0.05,1,0.5}
 \definecolor{lsNightGreen}{cmyk}{0.88,0.15,1,0.66}
 \definecolor{lsLightGray}{cmyk}{0,0,0,0.17}
+\definecolor{lsGuidelinesGray}{cmyk}{0,0.04,0,0.45}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -260,6 +241,11 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 \newcommand{\newlineSpine}{\\}	% \newline only on spine
 \newcommand{\newlineTOC}{\\}		% \newline only in TOC entry
 
+\newcommand{\lsSpineTitle}{\@title}
+\newcommand{\lsSpineAuthor}{\@author}
+\newcommand{\SpineTitle}[1]{\renewcommand{\lsSpineTitle}{#1}}
+\newcommand{\SpineAuthor}[1]{\renewcommand{\lsSpineAuthor}{#1}} 
+
 \def\translator#1{\gdef\@translator{#1}}
 \translator{}
 \def\typesetter#1{\gdef\@typesetter{#1}}
@@ -269,8 +255,13 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 %\def\@author{\@latex@warning@no@line{No \noexpand\author given}}
 
 
+\newcommand{\ISBN}[1]{\renewcommand{\lsISBN}{#1}}
+\newcommand{\URL}[1]{\renewcommand{\lsURL}{#1}}
+\newcommand{\Series}[1]{\renewcommand{\lsSeries}{#1}}
+\newcommand{\SeriesNumber}[1]{\renewcommand{\lsSeriesNumber}{#1}}
+
 % for papers of collections:
-\newcommand{\lsCollectionPaperAbstract}{Put abstract here.}
+\newcommand{\lsCollectionPaperAbstract}{Put abstract here with \string\abstract.}
 \newcommand{\abstract}[1]{\renewcommand{\lsCollectionPaperAbstract}{#1}}
 
 \def\epigram#1{\gdef\@epigram{#1}}			% needs to be defined this way to check emptiness
@@ -294,67 +285,86 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 \newcommand{\sidl}{sidl}
 \newcommand{\algad}{algad}
 \newcommand{\tmnlp}{tmnlp}
-\newcommand{\nc}{nc}			%Niger Congo
-\newcommand{\lnls}{lnls}		%Lecture Notes in Language Sciences
-\newcommand{\labphon}{labphon}%Studies in Laboratory Phonology
-\newcommand{\tdgi}{tdgi}		%Topics at the Discourse Grammar Interface
-\newcommand{\cmle}{cmle}		%Computational Models of Language Evolution
-\newcommand{\cfls}{cfls}		%Conceptual Foundation of the Language Sciences
+\newcommand{\nc}{nc}		%Niger Congo
+\newcommand{\lnls}{lnls}	%Lecture Notes in Language Sciences
+\newcommand{\silp}{silp}	%Studies in Laboratory Phonology
+\newcommand{\tdgi}{tdgi}	%Topics at the Discourse Grammar Interface
+\newcommand{\cmle}{cmle}	%Computational Models of Language Evolution
+\newcommand{\cfls}{cfls}	%Conceptual Foundation of the Language Sciences
+\newcommand{\lv}{lv}		%Language Variation
 \newcommand{\dummyseries}{dummyseries}
+\newcommand{\guidelines}{guidelines}
 \newcommand{\lsSeriesFontColor}{white}
 
+\AtBeginDocument{
 \ifx\lsSeries\eotms
-	\newcommand{\lsSeriesTitle}{Empirically Oriented Theoretical \\ Morphology and Syntax, No \lsSeriesNumber}
+	\newcommand{\lsSeriesTitle}{Empirically Oriented Theoretical \\ Morphology and Syntax~\lsSeriesNumber}
 	\newcommand{\lsSeriesColor}{lsMidBlue}
 \fi
 \ifx\lsSeries\eotmsig
-	\newcommand{\lsSeriesTitle}{Implemented Grammars, No \lsSeriesNumber}
+	\newcommand{\lsSeriesTitle}{Implemented Grammars~\lsSeriesNumber}
 	\newcommand{\lsSeriesColor}{lsMidBlue}
 \fi
 \ifx\lsSeries\sidl
-	\newcommand{\lsSeriesTitle}{Studies in Diversity Linguistics, No \lsSeriesNumber}
+	\newcommand{\lsSeriesTitle}{Studies in Diversity Linguistics~\lsSeriesNumber}
 	\newcommand{\lsSeriesColor}{lsRichGreen}
+	\renewcommand{\lsISSN}{2363-5568}
 \fi
 \ifx\lsSeries\algad
-	\newcommand{\lsSeriesTitle}{African Language Grammars\\ and Dictionaries, No \lsSeriesNumber}
+	\newcommand{\lsSeriesTitle}{African Language Grammars\\ and Dictionaries~\lsSeriesNumber}
 	\newcommand{\lsSeriesColor}{lsLightOrange}
 \fi
+\ifx\lsSeries\scl
+	\newcommand{\lsSeriesTitle}{Studies in Caribbean Languages~\lsSeriesNumber}
+	\newcommand{\lsSeriesColor}{lsDarkOrange}
+\fi
 \ifx\lsSeries\tmnlp
-	\newcommand{\lsSeriesTitle}{Translation and Multilingual Natural\\ Language Processing, No \lsSeriesNumber}
+	\newcommand{\lsSeriesTitle}{Translation and Multilingual Natural\\ Language Processing~\lsSeriesNumber}
 	\newcommand{\lsSeriesColor}{lsDarkBlue}
 \fi
 \ifx\lsSeries\lnls
-	\newcommand{\lsSeriesTitle}{Lecture Notes in Language Sciences, No \lsSeriesNumber}
+	\newcommand{\lsSeriesTitle}{Lecture Notes in Language Sciences~\lsSeriesNumber}
 	\newcommand{\lsSeriesColor}{lsYellow}
 \fi	
 \ifx\lsSeries\nc
-	\newcommand{\lsSeriesTitle}{Monographs on Comparative Niger-Congo, No \lsSeriesNumber}
+	\newcommand{\lsSeriesTitle}{Monographs on Comparative Niger-Congo~\lsSeriesNumber}
 	\newcommand{\lsSeriesColor}{lsRed}
 \fi	
-\ifx\lsSeries\labphon
-	\newcommand{\lsSeriesTitle}{Studies in Laboratory Phonology, No \lsSeriesNumber}
+\ifx\lsSeries\silp
+	\newcommand{\lsSeriesTitle}{Studies in Laboratory Phonology~\lsSeriesNumber}
 	\newcommand{\lsSeriesColor}{lsLightWine}
+	\renewcommand{\lsISSN}{2363-5576}
 \fi	
 \ifx\lsSeries\tdgi
-	\newcommand{\lsSeriesTitle}{Topics at the Discourse Grammar Interface, No \lsSeriesNumber}
+	\newcommand{\lsSeriesTitle}{Topics at the Discourse Grammar Interface~\lsSeriesNumber}
 	\newcommand{\lsSeriesColor}{lsMidDarkBlue}
 \fi	
 \ifx\lsSeries\cmle
-	\newcommand{\lsSeriesTitle}{Computational Models of Language Evolution, No \lsSeriesNumber}
+	\newcommand{\lsSeriesTitle}{Computational Models of Language Evolution~\lsSeriesNumber}
 	\newcommand{\lsSeriesColor}{lsNightBlue}
 \fi	
 \ifx\lsSeries\cfls
-	\newcommand{\lsSeriesTitle}{Conceptual Foundations of Language Science~\lsSeriesNumber}
+	\newcommand{\lsSeriesTitle}{Conceptual Foundations of\\ Language Science~\lsSeriesNumber}
 	\newcommand{\lsSeriesColor}{lsNightGreen}
+\fi	
+\ifx\lsSeries\lv
+	\newcommand{\lsSeriesTitle}{Language Variation~\lsSeriesNumber}
+	\newcommand{\lsSeriesColor}{lsDarkWine}
 \fi	
 \ifx\lsSeries\dummyseries
 	\newcommand{\lsSeriesTitle}{~}
 	\newcommand{\lsSeriesColor}{lsNightGreen}
-\fi	
+\fi
+\ifx\lsSeries\guidelines
+	\newcommand{\lsSeriesTitle}{Language Science Press Guidelines}
+	\newcommand{\lsSeriesColor}{lsGuidelinesGray}
+	\renewcommand{\lsCoverFontColor}{black}
+\fi
+}	
 
-\@ifundefined{blackandwhite}
-	{}
-	{\renewcommand{\lsSeriesColor}{black}}
+% \@ifundefined{blackandwhite}
+% 	{}
+% 	{\renewcommand{\lsSeriesColor}{black}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -402,9 +412,11 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 		isbn=false,
 		doi=false,
 		eprint=false,
-		backend=\lsBiblatexBackend
+		backend=\lsBiblatexBackend,
+		indexing=cite
 		]{biblatex}
-	\renewcommand{\postnotedelim}{: $\!$}%
+	\renewcommand{\postnotedelim}{: }%
+	\renewcommand{\multicitedelim}{\addsemicolon\space}%  
 	\DeclareFieldFormat{postnote}{#1}%
 	%\renewcommand{\nameyeardelim}{ }%		
 \else	%BibTeX
@@ -439,6 +451,12 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 
 \usepackage{floatrow}					% For adjusting the position of the caption (default is below).
 \floatsetup[table]{capposition=top} 	% As for tables, the caption appears above.
+
+% This sets the default for the positioning of floats
+\renewcommand{\fps@figure}{htbp}
+\renewcommand{\fps@table}{htbp}
+
+\usepackage{booktabs} %for nicer lines
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -483,8 +501,9 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 
 \makeindex
 \newindex{lan}{ldx}{lnd}{Language index}
-\newindex{aut}{adx}{and}{Name index}
-\renewindex{default}{idx}{ind}{Subject index}
+% \newindex{aut}{adx}{and}{Name index}
+\newindex{sbj}{sdx}{snd}{Subject index}
+\renewindex{default}{adx}{and}{Name index} %biblatex can only deal with the default index
 \newindex{wrd}{wdx}{wnd}{Expression index}
 \newindex{rwrd}{rdx}{rnd}{Reverse expression index}
 
@@ -496,17 +515,17 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 \fi
 
 \newcommand{\ia}[1]{\if@noftnote%
-\index[aut]{#1}%
+\index{#1}%
 \else%
-\index[aut]{#1|fn{\thefootnote}}%
+\index{#1|fn{\thefootnote}}%
 \fi%
 }
 
 \newcommand{\is}[1]{\if@noftnote%
-\index{#1}%
+\index[sbj]{#1}%
 \else%
 % irgendwie muss man ihn dazu bringen den Wert für footnote auch einzusetzen
-\index{#1|fn{*}}%
+\index[sbj]{#1|fn{*}}%
 %\indexftn{#1}{\value{footnotemark}}%
 \fi%
 }
@@ -555,6 +574,10 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 }
 
 
+\iflsDraft
+  \usepackage{showidx}
+\fi
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -590,10 +613,24 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%\usepackage[ISBN=\lsISBN,SC4]{ean13isbn}	% for generating bar codes; remove this?
+\usepackage{pst-barcode}					% for generating bar codes
 \newcommand{\logopath}{./LSP/lsp-logos}
 \newcommand{\lsCoverFontColor}{white}
 \newcommand{\lsCoverBlockColor}{\lsSeriesColor}
 \newcommand{\lsEditorPrefix}{}
+\newcommand{\lsEditorSuffix}{}   
+
+\iflsCollection  	% for collections: set \lsEditorSuffix depending on \@author
+\AtBeginDocument{	
+	\IfSubStr{\@author}{\&}	 	% if \@author contains \&
+		{\renewcommand{\lsEditorSuffix}{(eds.)}}
+		{\IfSubStr{\@author}{,}	% if \@author contains ,
+			{\renewcommand{\lsEditorSuffix}{(eds.)}}
+			{\renewcommand{\lsEditorSuffix}{(ed.)}}}
+}
+\else
+\fi
 
 \newcommand{\lsCoverBlock}{
 	\begin{textblock}{155}(7.6,7.5)
@@ -612,6 +649,7 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 	\fi}
 
 \newcommand{\lsCoverTitleAuthor}{
+	\renewcommand{\newlineCover}{\\}
 	\renewcommand{\newlineSpine}{}
 	\lsCoverBlock
 
@@ -633,8 +671,9 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 
 \newcommand{\lsCoverSeries}{
 	\begin{textblock}{95}(7.4,209)
-	\color{\lsCoverFontColor}
+	\color{white}
 	\raggedright\rule{3.6mm}{3.5mm}
+	\color{\lsCoverFontColor}
 	\hspace{3mm}\parbox[t]{85mm}{\raggedright\lsCoverSeriesFont   
 		\lsSeriesTitle\\}
 	\end{textblock}}
@@ -670,27 +709,32 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 	\lsBackBody
 	\end{textblock}
 
-	\begin{textblock}{40}(115,212.5)
-	\lsBackBodyFont
-	\sffamily
-	ISBN \lsISBN			
+	\begin{textblock}{40}(105,200)
+	\lsBackBodyFont\sffamily
+	\colorbox{white}{%
+	\begin{pspicture}(0,0)(4.1,1in)
+	\psbarcode[transx=0.4,transy=0.3]{\lsISBN}{includetext height=0.7}{isbn}
+	\end{pspicture}
+	%\EANisbn%			% remove this?
+	%{\EAN \lsISBN }  	% bar code without isbn line
+	}%	
 	\end{textblock}}
 
 \newcommand{\lsSpine}{			% Book spine
 	\renewcommand{\newlineSpine}{\\}
 	\renewcommand{\newlineCover}{}
 	\begin{textblock}{40}(65,0)
-	\rotatebox{90}{\color{black}\fbox{\begin{minipage}[c][\lsSpineBreadth][c]{\paperheight}
+	\rotatebox{90}{\color{black}\begin{minipage}[c][\lsSpineBreadth][c]{\paperheight}
 		\color{\lsSeriesColor}
 		\hspace{7.5mm}
 		\IfFileExists{\logopath/langsci_spinelogo_nocolor.pdf}{$\vcenter{\hbox{\includegraphics[angle=-90,origin=c]{\logopath/langsci_spinelogo_nocolor.pdf}}}$}{logo}
 		\hspace{15mm} 
 		{\lsSpineTitleFont
-			\rotatebox[origin=c]{180}{\pbox[c]{150mm}{\@title}}}
+			\rotatebox[origin=c]{180}{\pbox[c]{150mm}{\lsSpineTitle}}}
 		\hspace{13mm}
 		{\lsSpineAuthorFont 
-			\rotatebox[origin=c]{180}{\pbox[c]{100mm}{\@author}}}
-	\end{minipage}}} 
+			\rotatebox[origin=c]{180}{\pbox[c]{100mm}{\lsSpineAuthor\if\lsEditorSuffix\empty\else\ \lsEditorSuffix\fi}}}
+	\end{minipage}} 
 	\end{textblock}}
 
 
@@ -730,11 +774,12 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 	\includegraphics{\logopath/langsci_spinelogo_nocolor.pdf}}%
 	\hspace{0.8em}%
 	\parbox[b]{.85\textwidth}{\linespread{0.8}\small\normalfont\lsCollectionPaperCitationText}}
-\newcommand{\lsCollectionPaperCitationText}{\fullcite{this}}
+\newcommand{\lsCollectionPaperCitationText}{\string\lsCollectionPaperCitationText.}
 \newcommand{\lsPaper}{
 	\renewcommand{\maketitle}{
 		\addtocounter{chapter}{1}
 		\addchap*{\lsCollectionPaperTitle}
+		\global\edef\lsCollectionPaperFirstPage{\thepage}	% for citation in footer
 		\onlyAuthor
 		\renewcommand{\newlineCover}{}
 		\renewcommand{\newlineTOC}{\\}
@@ -751,6 +796,7 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 		\small\lsCollectionPaperAbstract
 		\end{quote}
 	}	
+
 	\renewcommand*{\thesection}{\arabic{section}}
 	\setcounter{section}{0}
 	\setcounter{footnote}{0}
@@ -773,6 +819,8 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 \newcommand{\lsOutputShort}{short}
 \newcommand{\lsOutputInprep}{inprep}
 \newcommand{\lsOutputPaper}{paper}
+\newcommand{\lsOutputGuidelines}{guidelines}
+
 
 \AtBeginDocument{
 \ifx\lsOutput\lsOutputPaper				% only if output=paper
@@ -844,6 +892,12 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 	 \lsCoverTitleAuthor}
 \fi								
 
+\ifx\lsOutput\lsOutputGuidelines				% only if output=guidelines
+	{\setcounter{page}{-1}
+	% First titlepage:
+	{\lsFrontPage}}
+\fi	
+
 \end{titlepage}
 
 \frontmatter
@@ -856,7 +910,10 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 
 % Imprint:
 \ifx\lsOutput\lsOutputInprep{}
-\else{\lsImpressum}
+\else{
+	\ifx\lsOutput\lsOutputGuidelines{}
+	\else{\lsImpressum}
+	\fi}
 \fi
 %%%%%%%%%%%%%
 
@@ -899,7 +956,12 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 \IfFileExists{./LSP/lsp-seriesinfo/\lsSeries-info.tex}{\input{./LSP/lsp-seriesinfo/\lsSeries-info}}{
   Series information: ./LSP/lsp-seriesinfo/\lsSeries-info.tex not found!} 
 
+\IfStrEq{\lsISSN}{??}		% \IfStrEq from xstring
+	{}
+	{\vfill\hfill ISSN: \lsISSN}
+
 }
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -907,24 +969,21 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newcommand{\lsImpressumCitationText}{
+	\renewcommand{\newlineCover}{}
+	\renewcommand{\newlineSpine}{}
+	{\@author}\if\lsEditorSuffix\empty\else\ \lsEditorSuffix\fi. %
+	{\the\year}. %
+	\textit{\@title} \if\@subtitle\empty\else. \textit{\@subtitle} \fi%
+	(\lsSeriesTitle). Berlin: Language Science Press.
+}
+
 \newcommand{\lsImpressum}{
-\renewcommand{\newlineCover}{}
 \raggedright
-\null\vfill
-Language Science Press\\
-Berlin\\
 
-\bigskip
+\lsImpressumCitationText
 
-Language Science Press\\
-Habelschwerdter Allee 45\\
-14195 Berlin, Germany
-
-\bigskip
-
-\href{http://langsci-press.org}{langsci-press.org}
-
-\bigskip
+\vfill
 
 This title can be downloaded at:\\
 \url{\lsURL}
@@ -940,7 +999,10 @@ Published under the Creative Commons Attribution-NoDerivatives 4.0 Licence (CC B
 http://creativecommons.org/licenses/by-nd/4.0/ 
 \fi
  
-ISBN: \lsISBN 
+ISBN: \lsISBN \\
+\IfStrEq{\lsISSN}{??}		% \IfStrEq from xstring
+	{}
+	{ISSN: \lsISSN}
 
 \bigskip
  
@@ -958,12 +1020,21 @@ Typesetting:
 Proofreading:
 \@proofreader \\
 \fi
+Fonts: Linux Libertine, Arimo \\
+Typesetting software: \XeLaTeX
 
-\vspace{3ex}
+\bigskip
+
+Language Science Press\\
+Habelschwerdter Allee 45\\
+14195 Berlin, Germany\\
+\href{http://langsci-press.org}{langsci-press.org}
+
+\vfill
 
 Storage and cataloguing done by FU Berlin \\[3ex]  	
 
-\IfFileExists{\logopath/FULogo_sw_CMYK.pdf}{\includegraphics[width=5cm]{\logopath/FULogo_sw_CMYK.pdf}}{FU-Logo} \\
+\IfFileExists{\logopath/FULogo_sw_CMYK.pdf}{\includegraphics[width=5cm]{\logopath/FULogo_sw_CMYK.pdf}}{FU-Logo} \\[3ex]
 
 \vfill
 
@@ -1050,12 +1121,22 @@ guarantee the accuracy of such information thereafter.
 
 \iflsCollection
 	\iflsBiblatex\else
-		\ClassError{LSP/langsci}{Collection option not compatible with plain BibTeX. Please use biblatex option}
+		\ClassError{LSP/langsci}{Collection option not compatible with plain BibTeX. Please use biblatex option}{}
 	\fi
 	
 \renewcommand{\lsEditorPrefix}{{\LARGE Edited by}\\}
+\AtBeginDocument{	% for the citation in the footer
+	\renewcommand{\newlineCover}{}
+	\renewcommand{\newlineSpine}{} 
+	\edef\lsCollectionTitle{\@title}		% \edef immediately expands \@title
+	\edef\lsCollectionEditor{\@author}
+	\addbibresource{collection_tmp.bib}
+	\newwrite\tempfile						% open temporary bib file
+	\immediate\openout\tempfile=collection_tmp.bib
+}
+\AtEndDocument{\immediate\closeout\tempfile}% close temporary bib file
 
-% customize \tableofcontents
+%% customize \tableofcontents
 \renewcommand{\@dotsep}{2.5}		% space between dots
 \renewcommand{\@tocrmarg}{1.5em}	% right margin for leader 
 \renewcommand{\@pnumwidth}{1.5em}	% width of page numbers
@@ -1070,24 +1151,51 @@ guarantee the accuracy of such information thereafter.
 \counterwithout{figure}{chapter}
 \counterwithout{table}{chapter}
 
-% Modified code from:
-% http://pastcounts.wordpress.com/2010/12/20/how-to-construct-a-collection-of-articles-with-latex/
+%% Modified code from:
+%% http://pastcounts.wordpress.com/2010/12/20/how-to-construct-a-collection-of-articles-with-latex/
 \newenvironment{collectionpaper}{
-\renewcommand{\documentclass}[2][]{}%
-\renewcommand{\usepackage}[2][]{}%
-\renewenvironment{document}{\begingroup}{\endgroup}%
+	\renewcommand{\documentclass}[2][]{}%
+	\renewcommand{\usepackage}[2][]{}%
+	\renewenvironment{document}{\begingroup}{\endgroup}%
 
-\renewcommand{\title}[1]{\renewcommand{\@title}{##1}}
-\renewcommand{\author}[1]{\renewcommand{\@author}{##1}}
-%\renewcommand{\thanks}[1]{\symbolfootnote[1]{##1}}
-\lsPaper
-}
-{}
+	\renewcommand{\title}[1]{\renewcommand{\@title}{##1}}
+	\renewcommand{\author}[1]{\renewcommand{\@author}{##1}}
+	%\renewcommand{\thanks}[1]{\symbolfootnote[1]{##1}}
+	\lsPaper
+	}
+	{}
 
 \newcommand{\includepaper}[1]{
 	\begin{collectionpaper}
-	\begin{refsection} 
+	\begin{refsection}
+
+	\DeclareCiteCommand{\fullciteFooter}
+		{\defcounter{maxnames}{\blx@maxbibnames}%
+		  \usebibmacro{prenote}}
+		{\usedriver
+		   {\DeclareNameAlias{sortname}{default}}
+		   {\thefield{entrytype}}}
+		{\multicitedelim}
+		{\usebibmacro{postnote}}
+	\renewcommand{\lsCollectionPaperCitationText}{\fullciteFooter{#1}} 
+	
 	\include{#1}%
+	\edef\lsCollectionPaperLastPage{\thepage}	% \lsCollectionPaperFirstPage is defined in \lsPaper
+
+	%%% for citation in footer
+	%% preprocessing of author/editor names
+	\onlyAuthor		
+	\renewcommand{\newlineCover}{}
+	\renewcommand{\newlineSpine}{}
+	\renewcommand{\newlineTOC}{}
+	\StrSubstitute{\@author}{,}{ and }[\authorTemp]
+	\StrSubstitute{\authorTemp}{\&}{ and }[\authorTemp]
+	\StrSubstitute{\lsCollectionEditor}{,}{ and }[\editorTemp]
+	\StrSubstitute{\editorTemp}{\&}{ and }[\editorTemp]
+
+	%% write bib entry to file
+	\immediate\write\tempfile{@incollection{#1,author={\authorTemp},title={\@title},booktitle={\lsCollectionTitle},editor={\editorTemp},publisher={Language Science Press},Address={Berlin},year=2014,pages={\lsCollectionPaperFirstPage --\lsCollectionPaperLastPage},options={skipbib=true}}}
+
 	%\printbibliography[heading=subbibliography,notkeyword=this]  
 	\end{refsection}
 	\end{collectionpaper}}
@@ -1134,26 +1242,25 @@ guarantee the accuracy of such information thereafter.
 % gets rid of the warnings:
 % Failed to convert input string to UTF16
 % http://tex.stackexchange.com/questions/66722/tex-live-2012-xelatex-moderncv-error-failed-to-convert-input-string-to-utf1
-\hypersetup{unicode,pdfencoding=auto}
-
-
+\hypersetup{unicode,pdfencoding=auto,bookmarksopenlevel=0}
+ 
 % this is required by authorindex
 \newif\ifshowindex \showindexfalse
 
 \usepackage{authorindex}
 
+% lsp-eng-hyp is a makeshift package. Authors should use localhyphenation.sty
+% \usepackage{./LSP/lsp-styles/lsp-eng-hyp}
 
-\usepackage{./LSP/lsp-styles/lsp-eng-hyp}
-
-
+% mex considered evil. We need explicit references to examples for XML conversion, but mex does not provide them
 % The following allows for a quick reference to following or preceeding examples (\mex{1}) or
 % (\mex{0}) but also (\mex{-1})
 % taken from covington.sty (check)
-\newcounter{lsptempcnt}
-
-\newcommand{\mex}[1]{\setcounter{lsptempcnt}{\value{equation}}%
-\addtocounter{lsptempcnt}{#1}%
-\arabic{lsptempcnt}}%
+% \newcounter{lsptempcnt}
+% 
+% \newcommand{\mex}[1]{\setcounter{lsptempcnt}{\value{equation}}%
+% \addtocounter{lsptempcnt}{#1}%
+% \arabic{lsptempcnt}}%
 
 % quotes are indented at one side only.
 \renewenvironment{quote}
@@ -1171,10 +1278,13 @@ guarantee the accuracy of such information thereafter.
 				\item\relax}
 			   {\endlist}
 
-\usepackage[english]{varioref}
+% varioref considered evil. We willh ave various output formats, and we do not know, where elements will be placed in all of them
+% \usepackage[english]{varioref}
 
 
-% usefull commands for glossings:
+% useful commands for glossings:
+\usepackage{./LSP/lsp-styles/lsp-lgr}
+
 \newlength{\LSPTmp}
 % a) hspace over width of something without showing it
 \newcommand*{\hspaceThis}[1]{\settowidth{\LSPTmp}{#1}\hspace*{\LSPTmp}}
@@ -1186,5 +1296,6 @@ guarantee the accuracy of such information thereafter.
 %\setlength{\epigraphwidth}{.2\textwidth}
 \setlength{\afterepigraphskip}{0\baselineskip}
 
-\endinput
+\usepackage{./LSP/lsp-styles/lsp-makros}
 
+\endinput

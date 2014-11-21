@@ -17,7 +17,7 @@
 	        ,output=long             % long|short|inprep              
 	        %,blackandwhite
 	        %,smallfont
- 	        %,draftmode  
+%  	        ,draftmode  
 		  ]{LSP/langsci}  
 		  
 %\documentclass{book}{LSP/langsci}    
@@ -55,10 +55,10 @@
 \frontmatter
 % %% uncomment if you have preface and/or acknowledgements
 % \chapter*{Preface} 
+\tableofcontents      
+\include{chapters/acknowledgements}
 \include{chapters/preface}
 % \section*{Acknowledgements} 
-\include{chapters/acknowledgements}
-\tableofcontents      
 \mainmatter         
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -67,7 +67,7 @@
 %%%                                              %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\include{chapters/Chapter1}
+% \include{chapters/Chapter1}
 \include{chapters/Chapter2}
 \include{chapters/Chapter3}
 \include{chapters/Chapter4}
@@ -91,17 +91,17 @@
 \phantomsection%this allows hyperlink in ToC to work
 \addcontentsline{toc}{section}{Name index}
 \ohead{Name index} 
-\printindex[aut]
+\printindex
   
-\phantomsection%this allows hyperlink in ToC to work
-\addcontentsline{toc}{section}{Language index}
-%\ohead{Language index} 
-%\printindex[lan] 
+% \phantomsection%this allows hyperlink in ToC to work
+% \addcontentsline{toc}{section}{Language index}
+% %\ohead{Language index} 
+% %\printindex[lan] 
   
 \phantomsection%this allows hyperlink in ToC to work
 \addcontentsline{toc}{section}{Subject index}
-\ohead{Subject index} 
-\printindex
+\ohead{Subject index}
+\printindex[sbj]
 
 \end{document} 
 

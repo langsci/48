@@ -12,13 +12,14 @@ LSP/langsci.cls
 	xelatex  -no-pdf enfield
 	makeindex -o enfield.ind enfield.idx
 	makeindex -o enfield.lnd enfield.ldx
+	makeindex -o enfield.snd enfield.sdx
 #	makeindex -o enfield.wnd enfield.wdx
 #	LSP/bin/reverse-index <enfield.wdx >enfield.rdx
 #	makeindex -o enfield.rnd enfield.rdx 
 	authorindex -i -p enfield.aux > enfield.bib.adx
 	sed 's/|hyperpage//' enfield.adx > enfield.txt.adx 
 	cat enfield.bib.adx enfield.txt.adx > enfield.combined.adx
-#	sed -e 's/}{/|hyperpage}{/g' enfield.adx > enfield.adx.hyp
+	sed -e 's/}{/|hyperpage}{/g' enfield.adx > enfield.adx.hyp
 	makeindex -o enfield.and enfield.combined.adx
 	xelatex -no-pdf enfield 
 	xelatex enfield 
