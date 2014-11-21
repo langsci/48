@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.6.25)  21 NOV 2014 09:27
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.6.25)  21 NOV 2014 15:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1906,6 +1906,8 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface .
 
+indexing: [][]{DorEtAl2014}
+indexing: [][]{EnfieldEtAl2014handbookla}
 indexing: [][]{enfield_transmission_2008}
 indexing: [][]{enfield_relationship_2013}
 ) [7
@@ -2035,12 +2037,12 @@ indexing: [][]{thomason_language_1988,curnow_what_2001,thomason_language_2001}
 . This font family consists of the following shapes:
 .................................................
 indexing: [][]{bakhtin_dialogic_1981}
-indexing: [][106-7, 157-8]{hockett_refurbishing_1987}
-indexing: [][227-8]{lee_whorf_1996}
+indexing: [][106--107, 157--158]{hockett_refurbishing_1987}
+indexing: [][227--228]{lee_whorf_1996}
 indexing: [][]{zipf_human_1949}
 [6]
 indexing: [][]{croft_explaining_2000}
-indexing: [][16-17]{enfield_relationship_2013}
+indexing: [][16--17]{enfield_relationship_2013}
 [7]
 indexing: [][]{dixon_rise_1997}
 indexing: [][]{reesink_explaining_2009}
@@ -2074,7 +2076,7 @@ indexing: [][]{smith_complex_2003}
 indexing: [][540]{smith_complex_2003}
 indexing: [][541]{smith_complex_2003}
 indexing: [][185]{cole_cultural_1996}
-indexing: [][193ff]{macwhinney_emergence_2005}
+indexing: [][193--195]{macwhinney_emergence_2005}
 indexing: [][]{lorenz_evolution_1958}
 [11]
 indexing: [][122]{newell_unified_1990}
@@ -2145,9 +2147,9 @@ indexing: [][276]{raczaszek-leonardi_multiple_2010}
 indexing: [][179]{cole_cultural_1996}
 indexing: [][192]{macwhinney_emergence_2005}
 indexing: [][]{newell_unified_1990}
-indexing: [][184-5]{cole_cultural_1996}
+indexing: [][184--185]{cole_cultural_1996}
 indexing: [][]{macwhinney_emergence_2005}
-indexing: [][279ff]{lemke_across_2000}
+indexing: [][279--286]{lemke_across_2000}
 indexing: [][]{uryu_ecology_2014}
 indexing: [][66]{zipf_human_1949}
 .................................................
@@ -2164,7 +2166,7 @@ indexing: [][66]{zipf_human_1949}
 indexing: [][]{NewmanPowerLaws2006}
 indexing: [][201]{clark_psychological_1984}
 [17]
-indexing: [][66ff]{zipf_human_1949}
+indexing: [][]{zipf_human_1949}
 indexing: [][]{rogers_diffusion_2003}
 indexing: [][]{sperber_anthropology_1985}
 indexing: [][]{boyd_culture_1985,boyd_origin_2005}
@@ -2174,7 +2176,7 @@ indexing: [][]{boyd_culture_1985,boyd_origin_2005}
 indexing: [][]{kirby_function_1999,kirby_ug_2004,christiansen_language_2008,cha
 ter_language_2010}
 indexing: [][]{greenberg_universals_1966}
-indexing: [][154-8]{sapir_language:_1921}
+indexing: [][154--158]{sapir_language:_1921}
 [18]
 indexing: [][]{givon_syntax:_1984,bybee_language_2010}
 indexing: [][]{weinreich_languages_1953}
@@ -2195,7 +2197,7 @@ d_ethnosyntax:_2002,everett_cultural_2005,everett_language:_2012}
 ]
 Chapter 3.
 indexing: [][]{dawkins_selfish_1976,sperber_anthropology_1985}
-indexing: [][214-5]{ross_social_1997}
+indexing: [][214--215]{ross_social_1997}
 indexing: [][54]{harris_historical_1995}
 [21]
 indexing: [][]{hudson_sociolinguistics_1996}
@@ -2225,9 +2227,12 @@ indexing: [][]{gibson_ecological_1979}
 [25]
 indexing: [][]{gladwell_tipping_2000}
 indexing: [][]{boyd_culture_1985}
-[26]
 File: figures/ch02fig02.png Graphic file (type QTm)
- <use  "figures/ch02fig02.png" > [27]
+<use  "figures/ch02fig02.png" >
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[26] [27]
 indexing: [][]{granovetter_strength_1973}
 [28]
 indexing: [][Chapter 6]{enfield_anatomy_2009}
@@ -2235,9 +2240,9 @@ indexing: [][Chapter 6]{enfield_anatomy_2009}
 indexing: [][]{sapir_language:_1921}
 indexing: [][]{kockelman_residence_2006}
 indexing: [][]{norman_cognitive_1991}
-[30]
 indexing: [][]{davidson_essential_2006,searle_intentionality:_1983,fodor_psycho
 semantics_1987}
+[30]
 indexing: [][60]{darwin_descent_1871}
 indexing: [][]{muller_darwinism_1870}
 [31]
@@ -2261,7 +2266,7 @@ indexing: [][213]{ross_social_1997}
 indexing: [][175]{milroy_language_1980}
 indexing: [][155]{milroy_social_1995}
 indexing: [][]{milardo_families_1988}
-indexing: [][138-139]{milroy_social_1995}
+indexing: [][138--139]{milroy_social_1995}
 indexing: [][]{rogers_diffusion_2003}
 [34]
 indexing: [][]{tomasello_cultural_1999}
@@ -2296,21 +2301,14 @@ File: figures/Fig02.png Graphic file (type QTm)
 File: figures/Fig03.jpg Graphic file (type QTm)
 
 <use  "figures/Fig03.jpg" >
-indexing: [][15-16]{darwin_expression_1872}
+indexing: [][15--16]{darwin_expression_1872}
 File: figures/Fig04.png Graphic file (type QTm)
 <use  "figures/Fig04.png" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [42]
-indexing: [][12ff]{kockelman_agent_2013}
-
-Overfull \hbox (0.37863pt too wide) in paragraph at lines 275--281
-\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 up \EU1/LinLibertine_R_B.otf(0)/m/it/10.
-95 relations between relations \EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ([]Kockel
-man[] []2013[]: 12ff)[]. This becomes possible when
- []
-
+indexing: [][12--17]{kockelman_agent_2013}
 indexing: [][29]{kockelman_residence_2006}
 [43]
 indexing: [][]{FillmoreFrameSemantics1982}
@@ -2319,7 +2317,7 @@ ining_2000,haspelmath_pre-established_2007}
 indexing: [][]{saussure_cours_1916}
 indexing: [][]{dixon_basic_2010,dixon_basics_2014}
 indexing: [][]{bickel_linguistic_2014}
-indexing: [][387ff]{enfield_grammar_2007}
+indexing: [][387--389]{enfield_grammar_2007}
 [44] [45]
 indexing: [][]{aikhenvald_dependencies_1998}
 indexing: [][]{aikhenvald_dependencies_1998}
@@ -2327,7 +2325,7 @@ indexing: [][1]{donegan_rhythm_1983}
 indexing: [][1]{donegan_rhythm_1983}
 indexing: [][111]{donegan_south-east_2002}
 indexing: [][14]{donegan_rhythm_1983}
-indexing: [][1-2]{donegan_rhythm_1983}
+indexing: [][1--2]{donegan_rhythm_1983}
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -2384,8 +2382,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 492--492
 []|[]
  []
 
-indexing: [][]{radcliffe-brown_social_1931}
 [47]
+indexing: [][]{radcliffe-brown_social_1931}
 indexing: [][2]{mcconvell_origin_1985}
 File: figures/Fig05.png Graphic file (type QTm)
 <use  "figures/Fig05.png" >
@@ -2410,7 +2408,7 @@ indexing: [][]{radcliffe-brown_andaman_1922,bronislaw_malinowski_argonauts_1922
 [49]
 indexing: [][]{le_page_acts_1985,hudson_sociolinguistics_1996}
 indexing: [][191]{le_page_acts_1985}
-indexing: [][8-9]{le_page_acts_1985}
+indexing: [][8--9]{le_page_acts_1985}
 ) [50]
 \openout2 = `chapters/Chapter6.aux'.
 
@@ -2462,7 +2460,7 @@ indexing: [][]{le_page_acts_1985,thomason_language_1988}
 [56]
 indexing: [][190]{le_page_acts_1985}
 indexing: [][197]{le_page_acts_1985}
-indexing: [][12ff]{hayakawa_language_1978}
+indexing: [][12]{hayakawa_language_1978}
 indexing: [][]{tomasello_constructing_2003}
 indexing: [][]{dunbar_grooming_1996}
 indexing: [][]{thomason_language_1988}
@@ -2474,7 +2472,7 @@ indexing: [][]{bourdieu_outline_1977,sperber_explaining_1996,sperber_cognitive_
 2004}
 indexing: [][]{hill_social_2003}
 [58]
-indexing: [][19ff]{zipf_human_1949}
+indexing: [][]{zipf_human_1949}
 indexing: [][21]{zipf_human_1949}
 indexing: [][73]{zipf_human_1949}
 indexing: [][123]{kirby_transitions:_2013}
@@ -2482,7 +2480,7 @@ indexing: [][123]{kirby_transitions:_2013}
 indexing: [][]{croft_explaining_2000}
 indexing: [][]{levelt_speaking:_1989}
 indexing: [][]{macneilage_frame/content_1998}
-indexing: [][54-55]{enfield_relationship_2013}
+indexing: [][54--55]{enfield_relationship_2013}
 indexing: [][]{zipf_human_1949}
 [60] [61])
 \openout2 = `chapters/Chapter7.aux'.
@@ -2495,7 +2493,7 @@ indexing: [][]{zipf_human_1949}
 ]
 Chapter 6.
 indexing: [][60]{darwin_descent_1871}
-indexing: [][192-194]{mufwene_ecology_2001}
+indexing: [][192--194]{mufwene_ecology_2001}
 indexing: [][]{muller_darwinism_1870}
 indexing: [][60]{darwin_descent_1871}
 indexing: [][v]{zipf_human_1949}
@@ -2513,9 +2511,9 @@ indexing: [][]{enfield_linguistic_2003,enfield_areal_2005,enfield_transmission_
 
 
 ] [79]
-Overfull \hbox (0.48933pt too wide) in paragraph at lines 209--210
-[]\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 Tabouret-Keller, Andrée, 5, 33, 49, 50
-,
+Overfull \hbox (3.85098pt too wide) in paragraph at lines 209--210
+[]\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 Tabouret-Keller, Andrée, 5, 33, 50, 55
+–
  []
 
 [80]) (./enfield.snd [81
@@ -2537,10 +2535,10 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 36610 strings out of 493734
- 669283 string characters out of 6146348
- 813941 words of memory out of 5000000
- 39316 multiletter control sequences out of 15000+600000
+ 36616 strings out of 493734
+ 669439 string characters out of 6146348
+ 814052 words of memory out of 5000000
+ 39322 multiletter control sequences out of 15000+600000
  17721 words of font info for 121 fonts, out of 8000000 for 9000
  1332 hyphenation exceptions out of 8191
  66i,13n,90p,10502b,866s stack positions out of 5000i,500n,10000p,200000b,80000s

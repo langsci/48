@@ -14,45 +14,45 @@ Database file #1: localbibliography.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--there's a number but no volume in jacob_evolution_1977
 Warning--there's a number but no volume in tinbergen_aims_1963
-You've used 187 entries,
+You've used 189 entries,
             3179 wiz_defined-function locations,
-            1505 strings with 26530 characters,
-and the built_in function-call counts, 96463 in all, are:
-= -- 7780
-> -- 2856
+            1511 strings with 26650 characters,
+and the built_in function-call counts, 97573 in all, are:
+= -- 7854
+> -- 2916
 < -- 177
-+ -- 1099
-- -- 816
-* -- 5520
-:= -- 15244
-add.period$ -- 772
-call.type$ -- 187
-change.case$ -- 1277
-chr.to.int$ -- 199
-cite$ -- 189
-duplicate$ -- 7926
-empty$ -- 8556
-format.name$ -- 1167
-if$ -- 19789
++ -- 1123
+- -- 834
+* -- 5602
+:= -- 15418
+add.period$ -- 780
+call.type$ -- 189
+change.case$ -- 1293
+chr.to.int$ -- 201
+cite$ -- 191
+duplicate$ -- 8018
+empty$ -- 8648
+format.name$ -- 1191
+if$ -- 20009
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 1682
-newline$ -- 944
-num.names$ -- 803
-pop$ -- 3459
+missing$ -- 1700
+newline$ -- 954
+num.names$ -- 813
+pop$ -- 3505
 preamble$ -- 1
-purify$ -- 1003
+purify$ -- 1017
 quote$ -- 0
-skip$ -- 3059
+skip$ -- 3087
 stack$ -- 0
-substring$ -- 4108
-swap$ -- 3374
+substring$ -- 4122
+swap$ -- 3412
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1356
+type$ -- 1368
 warning$ -- 2
-while$ -- 758
+while$ -- 764
 width$ -- 0
-write$ -- 2357
+write$ -- 2381
 (There were 2 warnings)
