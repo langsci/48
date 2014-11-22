@@ -344,7 +344,7 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 	\newcommand{\lsSeriesColor}{lsNightBlue}
 \fi	
 \ifx\lsSeries\cfls
-	\newcommand{\lsSeriesTitle}{Conceptual Foundations of\newlineCover Language Science~\lsSeriesNumber}
+	\newcommand{\lsSeriesTitle}{Conceptual Foundations of \newlineCover Language Science~\lsSeriesNumber}
 	\newcommand{\lsSeriesColor}{lsNightGreen}
 \fi	
 \ifx\lsSeries\lv
@@ -974,7 +974,7 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 	\renewcommand{\newlineSpine}{}
 	{\@author}\if\lsEditorSuffix\empty\else\ \lsEditorSuffix\fi. %
 	{\the\year}. %
-	\textit{\@title} \if\@subtitle\empty\else. \textit{\@subtitle} \fi%
+	\textit{\@title}\if\@subtitle\empty\else. \textit{\@subtitle} \fi%
 	(\lsSeriesTitle). Berlin: Language Science Press.
 }
 
