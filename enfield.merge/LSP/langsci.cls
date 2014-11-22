@@ -727,7 +727,7 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 	\rotatebox{90}{\color{black}\begin{minipage}[c][\lsSpineBreadth][c]{\paperheight}
 		\color{\lsSeriesColor}
 		\hspace{7.5mm}
-		\IfFileExists{\logopath/langsci_spinelogo_nocolor.pdf}{$\vcenter{\hbox{\includegraphics[angle=-90,origin=c]{\logopath/langsci_spinelogo_nocolor.pdf}}}$}{logo}
+% 		\IfFileExists{\logopath/langsci_spinelogo_nocolor.pdf}{$\vcenter{\hbox{\includegraphics[angle=-90,origin=c]{\logopath/langsci_spinelogo_nocolor.pdf}}}$}{logo}
 		\hspace{15mm} 
 		{\lsSpineTitleFont
 			\rotatebox[origin=c]{180}{\pbox[c]{150mm}{\lsSpineTitle}}}
@@ -974,7 +974,7 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 	\renewcommand{\newlineSpine}{}
 	{\@author}\if\lsEditorSuffix\empty\else\ \lsEditorSuffix\fi. %
 	{\the\year}. %
-	\textit{\@title}\if\@subtitle\empty\else. \textit{\@subtitle} \fi%
+	\textit{\@title}\if\@subtitle\empty\else: \textit{\@subtitle} \fi%
 	(\lsSeriesTitle). Berlin: Language Science Press.
 }
 
