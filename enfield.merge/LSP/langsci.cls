@@ -442,6 +442,19 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 	%\let\citew=\citealt
 \fi
 
+% http://tex.stackexchange.com/questions/51257/how-can-i-force-bibliography-items-not-to-be-split-across-pages
+\usepackage{etoolbox}
+% Mico (avoids items with five lines to move to the next page, but admits some widows, e.g. in
+% Enfield's book)
+%% \AtBeginEnvironment{thebibliography}{%
+%%     \clubpenalty10000
+%%     \@clubpenalty \clubpenalty
+%%     \widowpenalty10000}
+% egreg
+\AtBeginEnvironment{thebibliography}{%
+    \interlinepenalty=10000}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -1283,7 +1296,7 @@ guarantee the accuracy of such information thereafter.
 
 
 % useful commands for glossings:
-\usepackage{./LSP/lsp-styles/lsp-lgr}
+%\usepackage{./LSP/lsp-styles/lsp-lgr}
 
 \newlength{\LSPTmp}
 % a) hspace over width of something without showing it
