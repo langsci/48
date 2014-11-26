@@ -14,13 +14,18 @@ Aikhenvald, Alexandra~Y. \& R.~M.~W. Dixon. 1998.
 
 \bibitem[{Atkinson \& Heritage(1984)}]{atkinson_structures_1984}
 Atkinson, J.~Maxwell \& John Heritage. 1984.
-\newblock \emph{Structures of social action: studies in conversation analysis}.
+\newblock \emph{Structures of social action: {S}tudies in conversation
+  analysis}.
 \newblock Cambridge: Cambridge University Press.
 
 \bibitem[{Aureli et~al.(2008)Aureli, Schaffner, Boesch, Bearder, Call, Chapman,
-  Connor, Di~Fiore, Dunbar \& Henzi}]{aureli_fission-fusion_2008}
-Aureli, F., C.~M. Schaffner, C.~Boesch, S.~K. Bearder, Josep Call, C.~A.
-  Chapman, R.~Connor, A.~Di~Fiore, Robin I.~M. Dunbar \& S.~P. Henzi. 2008.
+  Connor, Di~Fiore, Dunbar, Henzi, Holekamp, Korstjens, Layton, Lee, Lehmann,
+  Manson, Ramos-Fernandez, Strier \& van Schaaik}]{aureli_fission-fusion_2008}
+Aureli, Filippo, Colleen~M. Schaffner, Christophe Boesch, Simon~K. Bearder,
+  Josep Call, Colin~A. Chapman, Richard Connor, Anthony Di~Fiore, Robin I.~M.
+  Dunbar, S.~Peter Henzi, Kay Holekamp, Amanda~H. Korstjens, Robert Layton,
+  Phyllis Lee, Julia Lehmann, Joseph~H. Manson, Gabriel Ramos-Fernandez,
+  Karen~B. Strier \& Carel~P. van Schaaik. 2008.
 \newblock Fission-fusion dynamics.
 \newblock \emph{Current Anthropology} 49(4). 627--654.
 
@@ -44,7 +49,7 @@ Bickel, Balthasar. 2014.
 \bibitem[{Bloch(2000)}]{bloch_well-disposed_2000}
 Bloch, Maurice. 2000.
 \newblock A well-disposed social anthropologist's problems with memes.
-\newblock In Robert Aunger (ed.), \emph{Darwinizing culture: The status of
+\newblock In Robert Aunger (ed.), \emph{Darwinizing culture: {T}he status of
   memetics as a science}, Oxford: Oxford University Press.
 
 \bibitem[{Bloomfield(1933)}]{bloomfield_language_1933}
@@ -94,7 +99,7 @@ Chafe, Wallace. 2000.
 \bibitem[{Chater \& Christiansen(2010)}]{chater_language_2010}
 Chater, Nick \& Morten~H. Christiansen. 2010.
 \newblock Language acquisition meets language evolution.
-\newblock \emph{Cognitive science} 34(7). 1131--57.
+\newblock \emph{Cognitive Science} 34(7). 1131--57.
 
 \bibitem[{Christiansen \& Chater(2008)}]{christiansen_language_2008}
 Christiansen, Morten~H. \& Nick Chater. 2008.
@@ -108,24 +113,24 @@ Clark, Eve~V. 2009.
 
 \bibitem[{Clark \& Malt(1984)}]{clark_psychological_1984}
 Clark, Herbert~H. \& Barbara~C. Malt. 1984.
-\newblock Psychological constraints on language: a commentary on {B}resnan and
-  {K}aplan and on {G}iv{\'o}n.
+\newblock Psychological constraints on language: {A} commentary on {B}resnan
+  and {K}aplan and on {G}iv{\'o}n.
 \newblock In Walter Kintsch, James~R. Miller \& Peter~G. Polson (eds.),
   \emph{Methods and tactics in cognitive science}, 191--214. Hillsdale, {NJ}:
   Lawrence Erlbaum.
 
 \bibitem[{Cole(1996)}]{cole_cultural_1996}
-Cole, M. 1996.
-\newblock \emph{Cultural psychology: A once and future discipline}.
+Cole, Michael. 1996.
+\newblock \emph{Cultural psychology: {A} once and future discipline}.
 \newblock Harvard: Harvard University Press.
 
 \bibitem[{Cole(2007)}]{cole_phylogeny_2007}
-Cole, M. 2007.
+Cole, Michael. 2007.
 \newblock Phylogeny and cultural history in ontogeny.
-\newblock \emph{Journal of Physiology-Paris} 101(4). 236--246.
+\newblock \emph{Journal of Physiology, Paris} 101(4). 236--246.
 
 \bibitem[{Cowley(2011)}]{cowley_distributed_2011}
-Cowley, S.~J. 2011.
+Cowley, Stephen~J. 2011.
 \newblock \emph{Distributed language}.
 \newblock Amsterdam: John Benjamins.
 
@@ -174,13 +179,14 @@ Dawkins, Richard. 1976.
 
 \bibitem[{Dawkins(1982)}]{dawkins_extended_1982}
 Dawkins, Richard. 1982.
-\newblock \emph{The extended phenotype: The long reach of the gene}.
+\newblock \emph{The extended phenotype: {T}he long reach of the gene}.
 \newblock Oxford: Oxford University Press.
 
 \bibitem[{Dawkins(1999)}]{DawkinsMemeForeword1999}
 Dawkins, Richard. 1999.
-\newblock Foreword to \textit{The meme machine} by {S}usan {B}lakemore.
-\newblock In \emph{The meme machine}, vii--xvii. Oxford University Press.
+\newblock \emph{Foreword to \textit{The meme machine} by {S}usan {B}lakemore}
+  vii--xvii.
+\newblock Oxford University Press.
 
 \bibitem[{Dingemanse et~al.(2013)Dingemanse, Torreira \&
   Enfield}]{dingemanse_is_2013}
@@ -210,7 +216,7 @@ Dixon, R. M.~W. 2014.
 Donald, Merlin. 2007.
 \newblock The slow process: A hypothetical cognitive adaptation for distributed
   cognitive networks.
-\newblock \emph{Journal of physiology, Paris} 101(4-6). 214--222.
+\newblock \emph{Journal of Physiology, Paris} 101(4-6). 214--222.
 
 \bibitem[{Donegan \& Stampe(1983)}]{donegan_rhythm_1983}
 Donegan, Jane \& David Stampe. 1983.
@@ -260,7 +266,7 @@ Enfield, N.~J. 2002.
 
 \bibitem[{Enfield(2003)}]{enfield_linguistic_2003}
 Enfield, N.~J. 2003.
-\newblock \emph{Linguistic epidemiology: Semantics and grammar of language
+\newblock \emph{Linguistic epidemiology: {S}emantics and grammar of language
   contact in mainland {S}outheast {A}sia}.
 \newblock London: Routledge Curzon.
 
@@ -271,7 +277,7 @@ Enfield, N.~J. 2005.
 
 \bibitem[{Enfield(2007)}]{enfield_grammar_2007}
 Enfield, N.~J. 2007.
-\newblock \emph{A grammar of {L}ao} (Mouton grammar library~38).
+\newblock \emph{A grammar of {L}ao} (Mouton Grammar Library~38).
 \newblock Berlin: Mouton de Gruyter.
 
 \bibitem[{Enfield(2008)}]{enfield_transmission_2008}
@@ -288,7 +294,7 @@ Enfield, N.~J. 2009.
 \bibitem[{Enfield(2011)}]{enfield_linguistic_2011}
 Enfield, N.~J. 2011.
 \newblock Linguistic diversity in mainland {S}outheast {A}sia.
-\newblock In N.~J. Enfield (ed.), \emph{Dynamics of human diversity: The case
+\newblock In N.~J. Enfield (ed.), \emph{Dynamics of human diversity: {T}he case
   of mainland {S}outheast {A}sia}, 63--80. Canberra: Pacific Linguistics.
 
 \bibitem[{Enfield(2013)}]{enfield_relationship_2013}
@@ -323,15 +329,15 @@ Enfield, N.~J. \& Jack Sidnell. 2014.
 
 \bibitem[{Evans(2012)}]{evans_enigma_2012}
 Evans, Nicholas~D. 2012.
-\newblock An enigma under an enigma: Unsolved linguistic paradoxes in a
-  sometime continent of hunter-gatherers (conference presentation, {A}msterdam
-  2012).
+\newblock An enigma under an enigma: {U}nsolved linguistic paradoxes in a
+  sometime continent of hunter-gatherers.
+\newblock Conference presentation, {A}msterdam 2012.
 
 \bibitem[{Evans-Pritchard(1940)}]{evans-pritchard_nuer:_1940}
 Evans-Pritchard, E.~E. 1940.
 \newblock \emph{The {N}uer: A description of the modes of livelihood and
   political institutions of a {N}ilotic people}.
-\newblock Clarendon Press.
+\newblock Oxford: Clarendon Press.
 
 \bibitem[{Everett(2005)}]{everett_cultural_2005}
 Everett, Daniel~L. 2005.
@@ -340,14 +346,14 @@ Everett, Daniel~L. 2005.
 
 \bibitem[{Everett(2012)}]{everett_language:_2012}
 Everett, Daniel~L. 2012.
-\newblock \emph{Language: The cultural tool}.
+\newblock \emph{Language: {T}he cultural tool}.
 \newblock London: Profile.
 
 \bibitem[{Fillmore(1982)}]{FillmoreFrameSemantics1982}
 Fillmore, Charles~J. 1982.
 \newblock Frame semantics.
 \newblock In Linguistic~Society of~Korea (ed.), \emph{Linguistics in the
-  morning calm}, 111--137. Hanshin.
+  morning calm}, 111--137. Seoul: Hanshin.
 
 \bibitem[{Firth(1936)}]{firth_we_1936}
 Firth, Raymond. 1936.
@@ -375,8 +381,8 @@ Fortes, Meyer \& E.~E. Evans-Pritchard (eds.). 1940.
 \newblock \emph{African political systems}.
 \newblock Oxford: Oxford University Press.
 
-\bibitem[{Gabelentz(1891)}]{gabelentz_sprachwissenschaft_1891}
-Gabelentz, Georg von~der. 1891.
+\bibitem[{von~der Gabelentz(1891)}]{gabelentz_sprachwissenschaft_1891}
+von~der Gabelentz, Georg. 1891.
 \newblock \emph{Die {S}prachwissenschaft, ihre {A}ufgaben, {M}ethoden und
   bisherigen {E}rgebnisse}.
 \newblock London: Routledge/Thoemmes Press. 2nd edn.
@@ -393,7 +399,7 @@ Garfinkel, Harold. 1967.
 
 \bibitem[{Gergely \& Csibra(2006)}]{gergely_sylvias_2006}
 Gergely, Gy{\"o}rgy \& Gergely Csibra. 2006.
-\newblock Sylvia's recipe: the role of imitation and pedagogy in the
+\newblock Sylvia's recipe: {T}he role of imitation and pedagogy in the
   transmission of cultural knowledge.
 \newblock In N.~J. Enfield \& Stephen~C. Levinson (eds.), \emph{Roots of human
   sociality: culture, cognition, and interaction}, 229--255. London: Berg.
@@ -406,13 +412,13 @@ Gibson, James~J. 1979.
 \bibitem[{Gigerenzer et~al.(2011)Gigerenzer, Hertwig \&
   Pachur}]{gigerenzer_heuristics:_2011}
 Gigerenzer, Gerd, Ralph Hertwig \& Thorsten Pachur (eds.). 2011.
-\newblock \emph{Heuristics: The foundations of adaptive behavior}.
+\newblock \emph{Heuristics: {T}he foundations of adaptive behavior}.
 \newblock New York: Oxford University Press.
 
 \bibitem[{Giv{\'o}n(1984)}]{givon_syntax:_1984}
 Giv{\'o}n, Talmy. 1984.
 \newblock \emph{Syntax: a functional-typological introduction}.
-\newblock Amsterdam/Philadelphia: John Benjamins.
+\newblock Amsterdam: John Benjamins.
 
 \bibitem[{Gladwell(2000)}]{gladwell_tipping_2000}
 Gladwell, Malcolm. 2000.
@@ -445,7 +451,7 @@ Grice, H.~Paul. 1975.
 
 \bibitem[{Hale(1986)}]{hale_notes_1986}
 Hale, Kenneth~L. 1986.
-\newblock Notes on world view and semantic categories: some {W}arlpiri
+\newblock Notes on world view and semantic categories: {S}ome {W}arlpiri
   examples.
 \newblock In Pieter Muysken \& Henk~van Riemsdijk (eds.), \emph{Features and
   projections}, 233--254. Dordrecht: Foris.
@@ -469,8 +475,9 @@ Haspelmath, Martin. 2007.
 
 \bibitem[{Hayakawa(1978)}]{hayakawa_language_1978}
 Hayakawa, Samuel~Ichiye. 1978.
-\newblock \emph{Language in thought and action (enlarged edition)}.
+\newblock \emph{Language in thought and action}.
 \newblock San Diego: Harcourt Brace Jovanovich.
+\newblock Enlarged edition.
 
 \bibitem[{Hedstr{\"o}m \& Swedberg(1998)}]{hedstrom_social_1998}
 Hedstr{\"o}m, Peter \& Richard Swedberg. 1998.
@@ -486,7 +493,7 @@ Heritage, John. 1984.
   Tomasello}]{herrmann_humans_2007}
 Herrmann, Esther, Josep Call, Mar{\'\i}a~Victoria Hern{\'a}ndez-Lloreda, Brian
   Hare \& Michael Tomasello. 2007.
-\newblock Humans have evolved specialized skills of social cognition: the
+\newblock Humans have evolved specialized skills of social cognition: {T}he
   cultural intelligence hypothesis.
 \newblock \emph{Science} 317. 1360--1366.
 
@@ -497,9 +504,9 @@ Hill, R.~A. \& Robin I.~M. Dunbar. 2003.
 
 \bibitem[{Hockett(1987)}]{hockett_refurbishing_1987}
 Hockett, Charles~F. 1987.
-\newblock \emph{Refurbishing our foundations: elementary linguistics from an
+\newblock \emph{Refurbishing our foundations: {E}lementary linguistics from an
   advanced point of view}.
-\newblock Amsterdam/Philadelphia: John Benjamins.
+\newblock Amsterdam: John Benjamins.
 
 \bibitem[{Hopper \& Traugott(1993)}]{hopper_grammaticalization_1993}
 Hopper, Paul~J. \& Elizabeth~Closs Traugott. 1993.
@@ -524,27 +531,27 @@ Hurford, James~R. 2012.
 \bibitem[{Jacob(1977)}]{jacob_evolution_1977}
 Jacob, Fran{\c c}ois. 1977.
 \newblock Evolution and tinkering.
-\newblock \emph{Science} 196. 1161--1966.
+\newblock \emph{Science} (196). 1161--1966.
 
 \bibitem[{Kandel(2009)}]{kandel2009biology}
 Kandel, Eric~R. 2009.
-\newblock The biology of memory: a forty-year perspective.
+\newblock The biology of memory: {A} forty-year perspective.
 \newblock \emph{The Journal of Neuroscience} 29(41). 12748--12756.
 
 \bibitem[{Keller(1994)}]{keller_language_1994}
 Keller, Rudi. 1994.
 \newblock \emph{On language change: {T}he invisible hand in language}.
-\newblock London/New York: Routledge.
+\newblock London: Routledge.
 
 \bibitem[{Kirby(1999)}]{kirby_function_1999}
 Kirby, Simon. 1999.
-\newblock \emph{Function, selection, and innateness: the emergence of language
-  universals}.
+\newblock \emph{Function, selection, and innateness: {T}he emergence of
+  language universals}.
 \newblock Oxford: Oxford University Press.
 
 \bibitem[{Kirby(2013)}]{kirby_transitions:_2013}
 Kirby, Simon. 2013.
-\newblock Transitions: The evolution of linguistic replicators.
+\newblock Transitions: {T}he evolution of linguistic replicators.
 \newblock In \emph{The language phenomenon}, 121--138. Berlin, Heidelberg:
   Springer Verlag.
 
@@ -592,8 +599,8 @@ Koonin, Eugene~V. 2009.
 Labov, William. 1986.
 \newblock On the mechanism of linguistic change.
 \newblock In John~J. Gumperz \& Dell Hymes (eds.), \emph{Directions in
-  sociolinguistics: the ethnography of communication}, 512--538. London: Basil
-  Blackwell 2nd edn.
+  sociolinguistics: {T}he ethnography of communication}, 512--538. London:
+  Basil Blackwell 2nd edn.
 
 \bibitem[{Langacker(1987)}]{langacker_foundations_1987}
 Langacker, Ronald~W. 1987.
@@ -608,7 +615,7 @@ Larsen-Freeman, D. \& D.~Cameron. 2008.
 
 \bibitem[{Le~Page \& Tabouret-Keller(1985)}]{le_page_acts_1985}
 Le~Page, R.~B. \& Andr{\'e}e Tabouret-Keller. 1985.
-\newblock \emph{Acts of identity: creole-based approaches to language and
+\newblock \emph{Acts of identity: {C}reole-based approaches to language and
   ethnicity}.
 \newblock Cambridge: Cambridge University Press.
 
@@ -620,7 +627,7 @@ Leach, Edmund. 1964.
 \bibitem[{Lee(1996)}]{lee_whorf_1996}
 Lee, Penny. 1996.
 \newblock \emph{The {W}horf theory complex: a critical reconstruction}.
-\newblock Amsterdam/Philadelphia: John Benjamins.
+\newblock Amsterdam: John Benjamins.
 
 \bibitem[{Lemke(2000)}]{lemke_across_2000}
 Lemke, J.~L. 2000.
@@ -629,11 +636,12 @@ Lemke, J.~L. 2000.
 \newblock \emph{Mind, Culture, and Activity} 7(4). 273--290.
 
 \bibitem[{Lemke(2002)}]{lemke_language_2002}
-Lemke, J.~L. 2002.
-\newblock Language development and identity: Multiple timescales in the social
-  ecology of learning.
-\newblock \emph{Language acquisition and language socialization: Ecological
-  perspectives} 68--87.
+Lemke, Jay~L. 2002.
+\newblock Language development and identity: {M}ultiple timescales in the
+  social ecology of learning.
+\newblock In Claire Kramsch (ed.), \emph{Language {A}cquisition and {L}anguage
+  {S}ocialization: {E}cological {P}erspectives}, 68--87. New York: Continuum
+  Press.
 
 \bibitem[{Leont'ev(1981)}]{leontev_problems_1981}
 Leont'ev, A. 1981.
@@ -659,8 +667,8 @@ Levinson, Stephen~C. 2014.
 
 \bibitem[{Lorenz(1958)}]{lorenz_evolution_1958}
 Lorenz, Konrad~Z. 1958.
-\newblock \emph{The evolution of behavior}.
-\newblock Freeman.
+\newblock The evolution of behavior.
+\newblock \emph{Scientific American} 6(199). 67--78.
 
 \bibitem[{Luce(1950)}]{luce_connectivity_1950}
 Luce, R.~D. 1950.
@@ -685,7 +693,7 @@ MacWhinney, B. 2005.
 
 \bibitem[{Malinowski(1922)}]{bronislaw_malinowski_argonauts_1922}
 Malinowski, Bronislaw. 1922.
-\newblock \emph{Argonauts of the {W}estern {P}acific: An account of native
+\newblock \emph{Argonauts of the {W}estern {P}acific: {A}n account of native
   enterprise and adventure in the archipelagoes of {M}elanesian {N}ew
   {G}uinea}.
 \newblock London: Routledge.
@@ -693,7 +701,7 @@ Malinowski, Bronislaw. 1922.
 \bibitem[{Manning(2005)}]{manning_migration_2005}
 Manning, Patrick. 2005.
 \newblock \emph{Migration in world history}.
-\newblock New York and London: Routledge.
+\newblock New York: Routledge.
 
 \bibitem[{Marx \& Engels(1947)}]{marx_german_1947}
 Marx, Karl \& Friedrich Engels. 1947.
@@ -703,13 +711,13 @@ Marx, Karl \& Friedrich Engels. 1947.
 \bibitem[{Mayr(1970)}]{mayr_populations_1970}
 Mayr, Ernst. 1970.
 \newblock \emph{Populations, species, and evolution}.
-\newblock Cambridge {MA} and London: Belknap Press.
+\newblock Cambridge {MA}: Belknap Press.
 
 \bibitem[{Mayr(1982)}]{mayr_growth_1982}
 Mayr, Ernst. 1982.
-\newblock \emph{The growth of biological thought: diversity, evolution, and
+\newblock \emph{The growth of biological thought: {D}iversity, evolution, and
   inheritance}.
-\newblock Cambridge {MA} and London: Belknap Press.
+\newblock Cambridge {MA}: Belknap Press.
 
 \bibitem[{McConvell(1985)}]{mcconvell_origin_1985}
 McConvell, Patrick. 1985.
@@ -777,8 +785,9 @@ Norman, Donald~A. 1988.
 \bibitem[{Norman(1991)}]{norman_cognitive_1991}
 Norman, Donald~A. 1991.
 \newblock Cognitive artifacts.
-\newblock In John~M. Carroll (ed.), \emph{Designing interaction: psychology at
-  the human-computer interface}, 17--38. Cambridge: Cambridge University Press.
+\newblock In John~M. Carroll (ed.), \emph{Designing interaction: {P}sychology
+  at the human-computer interface}, 17--38. Cambridge: Cambridge University
+  Press.
 
 \bibitem[{Pagel et~al.(2007)Pagel, Atkinson \& Meade}]{pagel_frequency_2007}
 Pagel, Mark, Quentin~D. Atkinson \& Andrew Meade. 2007.
@@ -833,8 +842,8 @@ Rogers, Everett~M. 2003.
 Ross, Malcolm. 1997.
 \newblock Social networks and kinds of speech-community event.
 \newblock In Roger Blench \& Matthew Spriggs (eds.), \emph{Archaeology and
-  language {I}: {T}heoretical and methodological orientations}, London/New
-  York: Routledge.
+  language {I}: {T}heoretical and methodological orientations}, London:
+  Routledge.
 
 \bibitem[{Runciman(2009)}]{runciman_theory_2009}
 Runciman, W.~G. 2009.
@@ -856,8 +865,8 @@ Sahlins, Marshall. 1999.
 
 \bibitem[{Sapir(1921)}]{sapir_language:_1921}
 Sapir, Edward. 1921.
-\newblock \emph{Language: an introduction to the study of speech}.
-\newblock Orlando/San Diego/New York/London: Harcourt Brace Jovanovich.
+\newblock \emph{Language: {A}n introduction to the study of speech}.
+\newblock Orlando: Harcourt Brace Jovanovich.
 
 \bibitem[{Saussure(1916)}]{saussure_cours_1916}
 Saussure, Ferdinand~de. 1916.
@@ -899,8 +908,9 @@ Searle, John~R. 1983.
 
 \bibitem[{Searle(2010)}]{searle_making_2010}
 Searle, John~R. 2010.
-\newblock \emph{Making the social world: The structure of human civilization}.
-\newblock Oxford University Press, {USA}.
+\newblock \emph{Making the social world: {T}he structure of human
+  civilization}.
+\newblock Oxford University Press.
 
 \bibitem[{Sidnell \& Enfield(2012)}]{sidnell_language_2012}
 Sidnell, Jack \& N.~J. Enfield. 2012.
@@ -922,7 +932,7 @@ Simon, Herbert~A. 1990.
 Slobin, Dan. 1996.
 \newblock From `thought and language' to `thinking for speaking'.
 \newblock In J.~J. Gumperz \& Stephen~C. Levinson (eds.), \emph{Rethinking
-  linguistic relativity}, 70--96. Cambridge University Press.
+  linguistic relativity}, 70--96. Cambridge: Cambridge University Press.
 
 \bibitem[{Smith(1776)}]{smith_inquiry_1776}
 Smith, Adam. 1776.
@@ -932,19 +942,19 @@ Smith, Adam. 1776.
 
 \bibitem[{Smith et~al.(2003)Smith, Brighton \& Kirby}]{smith_complex_2003}
 Smith, Kenny, Henry Brighton \& Simon Kirby. 2003.
-\newblock Complex systems in language evolution: The cultural emergence of
+\newblock Complex systems in language evolution: {T}he cultural emergence of
   compositional structure.
 \newblock \emph{Advances in Complex Systems} 06(04). 537--558.
 
 \bibitem[{Sperber(1985)}]{sperber_anthropology_1985}
 Sperber, Dan. 1985.
-\newblock Anthropology and psychology: towards an epidemiology of
+\newblock Anthropology and psychology: {T}owards an epidemiology of
   representations.
 \newblock \emph{Man} 20. 73--89.
 
 \bibitem[{Sperber(1996)}]{sperber_explaining_1996}
 Sperber, Dan. 1996.
-\newblock \emph{Explaining culture: a naturalistic approach}.
+\newblock \emph{Explaining culture: {A} naturalistic approach}.
 \newblock London: Blackwell.
 
 \bibitem[{Sperber(2006)}]{sperber_why_2006-1}
@@ -957,7 +967,7 @@ Sperber, Dan. 2006.
 \bibitem[{Sperber \& Hirschfeld(2004)}]{sperber_cognitive_2004}
 Sperber, Dan \& Lawrence~A. Hirschfeld. 2004.
 \newblock The cognitive foundations of cultural stability and diversity.
-\newblock \emph{Trends in cognitive sciences} 8(1). 40--46.
+\newblock \emph{Trends in {C}ognitive {S}ciences} 8(1). 40--46.
 
 \bibitem[{Sperber \& Wilson(1995)}]{dan_sperber_relevance:_1995}
 Sperber, Dan \& Dierdre Wilson. 1995.
@@ -969,7 +979,7 @@ Steels, Luc. 1998.
 \newblock Synthesizing the origins of language and meaning using coevolution,
   self-organization and level formation.
 \newblock In James~R. Hurford, Michael Studdert-Kennedy \& Chris Knight (eds.),
-  \emph{Approaches to the evolution of language: social and cognitive bases},
+  \emph{Approaches to the evolution of language: {S}ocial and cognitive bases},
   Cambridge: Cambridge University Press.
 
 \bibitem[{Steels(2003)}]{steels_evolving_2003}
@@ -979,7 +989,7 @@ Steels, Luc. 2003.
 
 \bibitem[{Steffensen \& Fill(2014)}]{steffenson_ecolinguistics:_2013}
 Steffensen, Sune~Vork \& Alwin Fill. 2014.
-\newblock Ecolinguistics: the state of the art and future horizons.
+\newblock Ecolinguistics: {T}he state of the art and future horizons.
 \newblock \emph{Language Sciences} 41(A). 6--25.
 
 \bibitem[{Stivers et~al.(2011)Stivers, Mondada \&
@@ -1010,14 +1020,14 @@ Tomasello, Michael. 1999.
 
 \bibitem[{Tomasello(2003)}]{tomasello_constructing_2003}
 Tomasello, Michael. 2003.
-\newblock \emph{Constructing a language: a usage-based theory of language
+\newblock \emph{Constructing a language: {A} usage-based theory of language
   acquisition}.
 \newblock Cambridge, {MA}: Harvard University Press.
 
 \bibitem[{Uryu et~al.(2014)Uryu, Steffensen \& Kramsch}]{uryu_ecology_2014}
 Uryu, Michiko, Sune~Vork Steffensen \& Claire Kramsch. 2014.
-\newblock The ecology of intercultural interaction: timescales, temporal ranges
-  and identity dynamics.
+\newblock The ecology of intercultural interaction: {T}imescales, temporal
+  ranges and identity dynamics.
 \newblock \emph{Language Sciences} 41. 41--59.
 
 \bibitem[{Vygotsky(1962)}]{vygotsky_thought_1962}

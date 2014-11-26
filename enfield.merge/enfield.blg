@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2013)
+This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: enfield.aux
 The style file: ./LSP/lsp-bst/unified.bst
@@ -12,44 +12,46 @@ A level-1 auxiliary file: chapters/Chapter6.aux
 A level-1 auxiliary file: chapters/Chapter7.aux
 Database file #1: localbibliography.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--there's a number but no volume in jacob_evolution_1977
 You've used 189 entries,
             3179 wiz_defined-function locations,
-            1511 strings with 26656 characters,
-and the built_in function-call counts, 97563 in all, are:
-= -- 7854
-> -- 2916
+            1514 strings with 26889 characters,
+and the built_in function-call counts, 98259 in all, are:
+= -- 7888
+> -- 3001
 < -- 177
-+ -- 1123
-- -- 834
-* -- 5596
-:= -- 15418
-add.period$ -- 780
++ -- 1151
+- -- 862
+* -- 5674
+:= -- 15520
+add.period$ -- 782
 call.type$ -- 189
-change.case$ -- 1293
+change.case$ -- 1303
 chr.to.int$ -- 201
-cite$ -- 189
-duplicate$ -- 8018
-empty$ -- 8646
-format.name$ -- 1191
-if$ -- 20009
+cite$ -- 190
+duplicate$ -- 8062
+empty$ -- 8675
+format.name$ -- 1219
+if$ -- 20138
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 1702
-newline$ -- 954
-num.names$ -- 813
-pop$ -- 3507
+missing$ -- 1714
+newline$ -- 956
+num.names$ -- 815
+pop$ -- 3519
 preamble$ -- 1
-purify$ -- 1017
+purify$ -- 1026
 quote$ -- 0
-skip$ -- 3089
+skip$ -- 3080
 stack$ -- 0
-substring$ -- 4122
-swap$ -- 3408
+substring$ -- 4143
+swap$ -- 3448
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 1368
-warning$ -- 0
-while$ -- 764
+warning$ -- 1
+while$ -- 767
 width$ -- 0
-write$ -- 2381
+write$ -- 2386
+(There was 1 warning)
