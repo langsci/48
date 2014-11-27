@@ -15,43 +15,43 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--there's a number but no volume in jacob_evolution_1977
 You've used 189 entries,
             3179 wiz_defined-function locations,
-            1514 strings with 26889 characters,
-and the built_in function-call counts, 98259 in all, are:
-= -- 7888
-> -- 3001
+            1515 strings with 26905 characters,
+and the built_in function-call counts, 98354 in all, are:
+= -- 7897
+> -- 3005
 < -- 177
-+ -- 1151
-- -- 862
-* -- 5674
-:= -- 15520
-add.period$ -- 782
++ -- 1152
+- -- 863
+* -- 5682
+:= -- 15535
+add.period$ -- 783
 call.type$ -- 189
-change.case$ -- 1303
+change.case$ -- 1306
 chr.to.int$ -- 201
 cite$ -- 190
-duplicate$ -- 8062
-empty$ -- 8675
-format.name$ -- 1219
-if$ -- 20138
+duplicate$ -- 8072
+empty$ -- 8682
+format.name$ -- 1220
+if$ -- 20157
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 1714
+missing$ -- 1715
 newline$ -- 956
-num.names$ -- 815
-pop$ -- 3519
+num.names$ -- 817
+pop$ -- 3518
 preamble$ -- 1
 purify$ -- 1026
 quote$ -- 0
-skip$ -- 3080
+skip$ -- 3082
 stack$ -- 0
 substring$ -- 4143
-swap$ -- 3448
+swap$ -- 3455
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1368
+type$ -- 1371
 warning$ -- 1
-while$ -- 767
+while$ -- 768
 width$ -- 0
-write$ -- 2386
+write$ -- 2387
 (There was 1 warning)

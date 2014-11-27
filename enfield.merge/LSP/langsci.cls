@@ -362,7 +362,7 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 \fi
 }	
 
-% \@ifundefined{blackandwhite}
+% \@ifundefined{blackanxdwhite}
 % 	{}
 % 	{\renewcommand{\lsSeriesColor}{black}}
 
